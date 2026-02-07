@@ -6,7 +6,7 @@ import {
   signInSuccess,
   signInFailure,
 } from "../redux/user/userSlice";
-import OAuth from "../components/oAuth";
+import OAuth from "../components/OAuth";
 import { useEffect } from "react";
 
 const SignIn = () => {
