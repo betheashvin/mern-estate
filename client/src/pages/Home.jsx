@@ -76,7 +76,7 @@ const Home = () => {
       <Swiper navigation>
         {offerListings &&
           offerListings.length > 0 &&
-          offerListings.map((listing) => {
+          offerListings.map((listing) => (
             <SwiperSlide>
               <div
                 style={{
@@ -86,8 +86,8 @@ const Home = () => {
                 className="h-[550px]"
                 key={listing._id}
               ></div>
-            </SwiperSlide>;
-          })}
+            </SwiperSlide>
+          ))}
       </Swiper>
 
       {/* listing results for offer, sale & rent */}
