@@ -23,10 +23,6 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
-app.listen(3000, () => {
-  console.log(`Server is running on port 3000`);
-});
-
 app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter);
 app.use("/api/listing", listingRouter);
@@ -46,3 +42,11 @@ app.use((err, req, res, next) => {
     message,
   });
 });
+
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(3000, () => {
+    console.log('Server is running on port 3000');
+  });
+}
+
+export default app;
