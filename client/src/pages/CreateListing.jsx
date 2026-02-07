@@ -84,7 +84,7 @@ const CreateListing = () => {
         });
     });
   };
-  // 6:03:49
+
   const handleRemoveImage = (index) => {
     setFormData({
       ...formData,
