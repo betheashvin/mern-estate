@@ -58,9 +58,9 @@ While building this system, I identified key areas where a standard MERN impleme
    MONGO_URI=your_mongodb_connection_string
    JWT_SECRET=your_secret_key
    
-```
+
 4. **Run the application:**
    ```bash
-   # From root (concurrently)
+   # From root 
    npm run dev
    ```
