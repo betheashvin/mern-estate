@@ -6,7 +6,7 @@ Project link: https://mern-estate-ashy-five.vercel.app/
 ---
 
 ## Architectural Case Study & Audit
-* Beyond the implementation, I performed a technical audit to identify production-level bottlenecks and scalability constraints.*
+* Beyond the implementation, I performed a technical audit to identify production-level bottlenecks and scalability constraints. 
 
 ### **Engineering Decisions**
 *   **Hybrid Storage Strategy:** Utilized **MongoDB** for flexible property schemas while offloading heavy binary image data to **Firebase Storage**. This ensures the primary database remains lean and performant for queries.
